@@ -3,7 +3,7 @@ public class Dashboard {
     public static void main(String[] args) 
     {
 
-        System.out.println("This is Dashboard");
+        System.out.println("WELCOME TO HOSTEL MANAGEMENT SYSTEM");
 
     }
     
