@@ -7,12 +7,13 @@ public class Login {
         System.out.print("\033[H\033[2J");
 
       String asciiArt =
-                ".____                 .__        \n" +
-                "|    |    ____   ____ |__| ____  \n" +
-                "|    |   /  _ \\ / ___\\|  |/    \\ \n" +
-                "|    |__(  <_> ) /_/  >  |   |  \\\n" +
-                "|_______ \\____/\\___  /|__|___|  /\n" +
-                "              /_____/         \\/ ";
+              """
+                      .____                 .__       \s
+                      |    |    ____   ____ |__| ____ \s
+                      |    |   /  _ \\ / ___\\|  |/    \\\s
+                      |    |__(  <_> ) /_/  >  |   |  \\
+                      |_______ \\____/\\___  /|__|___|  /
+                                    /_____/         \\/\s""";
         
             
 
@@ -25,8 +26,7 @@ public class Login {
 
         if (password.equals("admin")) {
             System.out.print("\033[H\033[2J");
-            Dashboard dash = new Dashboard();
-            dash.main(null); 
+            Dashboard.main(null);
         } else {
             System.out.println("Access Denied");
         }
